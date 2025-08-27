@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
+# FoladaWrites
 
-## Project info
+A modern, responsive writing platform built with React, TypeScript, and Tailwind CSS. Features an elegant design with comprehensive theme support including light, dark, and system-based themes.
 
-**URL**: https://lovable.dev/projects/ea3cb7a1-e5e4-46b5-8505-dc9d45045489
+## ✨ Features
 
-## How can I edit this code?
+- 🎨 **Theme Support**: Light, dark, and system theme modes with seamless switching
+- 📱 **Responsive Design**: Optimized for all device sizes
+- ⚡ **Fast Development**: Built with Vite for lightning-fast hot module replacement
+- 🎭 **Modern UI**: Styled with Tailwind CSS and shadcn/ui components
+- 🔧 **TypeScript**: Full type safety throughout the application
+- 🎯 **Accessible**: Built with accessibility in mind
 
-There are several ways of editing your application.
+## 🚀 Quick Start
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ea3cb7a1-e5e4-46b5-8505-dc9d45045489) and start prompting.
+- Node.js (v18 or higher)
+- npm or yarn package manager
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
+1. **Clone the repository**
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd foladawrites
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-Follow these steps:
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to see the application running.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Development
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Available Scripts
 
-# Step 3: Install the necessary dependencies.
-npm i
+- `npm run dev` - Start the development server with hot reloading
+- `npm run build` - Build the project for production
+- `npm run build:dev` - Build the project in development mode
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint to check code quality
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Project Structure
+
+```
+foladawrites/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable React components
+│   │   ├── Navbar.tsx   # Navigation component
+│   │   └── ThemeToggle.tsx # Theme switching component
+│   ├── contexts/        # React context providers
+│   │   └── ThemeContext.tsx # Theme management
+│   ├── App.tsx          # Main application component
+│   ├── main.tsx         # Application entry point
+│   └── index.css        # Global styles and CSS variables
+├── package.json         # Project dependencies and scripts
+├── vite.config.ts       # Vite configuration
+├── tailwind.config.ts   # Tailwind CSS configuration
+└── tsconfig.json        # TypeScript configuration
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Theme System
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The application includes a comprehensive theme system with three modes:
 
-**Use GitHub Codespaces**
+- **Light Mode**: Clean, bright interface for daytime use
+- **Dark Mode**: Easy on the eyes for low-light environments
+- **System Mode**: Automatically matches your operating system's theme preference
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The theme toggle is accessible from the navigation bar and remembers your preference across sessions.
 
-## What technologies are used for this project?
+## 🏗️ Built With
 
-This project is built with:
+- **[React](https://reactjs.org/)** - UI library
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[Vite](https://vitejs.dev/)** - Next generation frontend tooling
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[shadcn/ui](https://ui.shadcn.com/)** - Re-usable components built with Radix UI
+- **[Lucide React](https://lucide.dev/)** - Beautiful & consistent icon toolkit
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📦 Key Dependencies
 
-## How can I deploy this project?
+### Core
+- React 18.3.1
+- TypeScript 5.8.3
+- Vite 5.4.19
 
-Simply open [Lovable](https://lovable.dev/projects/ea3cb7a1-e5e4-46b5-8505-dc9d45045489) and click on Share -> Publish.
+### UI & Styling
+- Tailwind CSS 3.4.17
+- @shadcn/ui 0.0.4
+- Radix UI components
+- Lucide React icons
 
-## Can I connect a custom domain to my Lovable project?
+### Development Tools
+- ESLint for code linting
+- PostCSS for CSS processing
+- Various TypeScript type definitions
 
-Yes, you can!
+## 🤝 Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Built with modern web development best practices
+- Inspired by clean, minimal design principles
+- Accessibility-first approach to UI development
