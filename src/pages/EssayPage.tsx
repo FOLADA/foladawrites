@@ -90,7 +90,7 @@ export default function EssayPage() {
             </div>
             
             <Link to="/" className="mt-10 inline-flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 group">
-                    <span className="font-medium">Read More Essays</span>
+                    <span className="font-medium">Read More</span>
                     <svg 
                         className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" 
                         fill="none" 
