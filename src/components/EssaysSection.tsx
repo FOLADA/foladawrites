@@ -53,7 +53,7 @@ const EssaysSection = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Essays</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Thoughts</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -137,7 +137,7 @@ const EssaysSection = () => {
         ) : (
           <div className="text-center py-12">
             <div className="bg-muted/50 rounded-lg p-8 max-w-md mx-auto">
-              <h3 className="text-xl font-semibold mb-2">No Essays Found</h3>
+              <h3 className="text-xl font-semibold mb-2">Nothing Found</h3>
               <p className="text-muted-foreground">
                 Check back soon for new content!
               </p>
@@ -152,7 +152,7 @@ const EssaysSection = () => {
               to="/essays"
               className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200 font-medium"
             >
-              View All Essays
+              View All
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>
