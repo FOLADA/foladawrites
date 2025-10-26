@@ -56,7 +56,7 @@ const About = () => {
           </div>
 
           {/* Profile Content */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-2 lg:col-span-3 space-y-6">
             <h2 className="font-elegant text-3xl md:text-4xl font-light text-foreground">
               Saba Folashvili
             </h2>
@@ -105,31 +105,6 @@ const About = () => {
                 </a>
               );
             })}
-          </div>
-        </div>
-
-        {/* Philosophy Section */}
-        <div className={`rounded-2xl p-8 ${
-          effectiveTheme === 'dark' ? 'bg-muted/30' : 'bg-primary/5'
-        }`}>
-          <h3 className="font-elegant text-2xl md:text-3xl font-light text-foreground mb-6">
-            My Writing Philosophy
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="text-xl font-medium text-foreground mb-3">Clarity Through Complexity</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                I believe in making complex ideas accessible without oversimplifying them. 
-                True understanding comes from grappling with nuance, not avoiding it.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl font-medium text-foreground mb-3">Interdisciplinary Approach</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                My essays draw from multiple fields—technology, philosophy, literature, and science—
-                to offer fresh perspectives on familiar topics.
-              </p>
-            </div>
           </div>
         </div>
       </div>
