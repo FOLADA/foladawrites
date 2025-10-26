@@ -126,7 +126,7 @@ const EssaysSection = () => {
                       to={`/essay/${essay.currentSlug}`}
                       className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200"
                     >
-                      Read The Essay
+                      Read
                       <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
                     </Link>
                   </div>
