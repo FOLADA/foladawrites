@@ -1,5 +1,6 @@
-import { ExternalLink, Github, Linkedin, Facebook, Twitter } from 'lucide-react';
+import { ExternalLink, Github, Linkedin, Facebook, Twitter, Home, BookOpen } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const { effectiveTheme } = useTheme();
@@ -44,38 +45,10 @@ const About = () => {
 
         {/* Profile Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
-          {/* Profile Image Placeholder */}
-          <div className="lg:col-span-1 flex justify-center">
-            <div className={`w-64 h-64 rounded-full overflow-hidden border-4 ${
-              effectiveTheme === 'dark' ? 'border-muted' : 'border-primary/20'
-            }`}>
-              <div className="w-full h-full bg-gradient-to-br from-primary/10 to-muted flex items-center justify-center">
-                <span className="text-6xl font-elegant text-primary/30">S</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Profile Content */}
-          <div className="lg:col-span-2 lg:col-span-3 space-y-6">
-            <h2 className="font-elegant text-3xl md:text-4xl font-light text-foreground">
-              Saba Folashvili
-            </h2>
-            
-            <div className="space-y-4">
-              <p className="text-lg md:text-xl text-muted-foreground/80 leading-relaxed font-light">
-                I'm a <span className="text-foreground font-normal">polymath</span> with a passion for writing, technology, and creative problem-solving. 
-                My journey spans across multiple disciplines, allowing me to approach challenges from unique perspectives.
-              </p>
-              
-              <p className="text-base md:text-lg text-muted-foreground/70 leading-relaxed font-light">
-                Through FoladaWrites, I share essays that explore the intersections of technology, philosophy, 
-                and human experience. My work aims to bridge the gap between complex ideas and accessible understanding.
-              </p>
-              
-              <p className="text-base md:text-lg text-muted-foreground/60 font-light italic">
-                Connect with me on social media, or don't, as you wish.
-              </p>
-            </div>
+          <div className="flex flex-col items-center justify-center col-span-1 lg:col-span-3">
+            <h3 className="font-serif text-xl md:text-2xl text-center">
+              I'm <span className="font-bold">Saba Foladashvili</span>, a polymath who sometimes writes
+            </h3>
           </div>
         </div>
 
@@ -106,6 +79,16 @@ const About = () => {
               );
             })}
           </div>
+        </div>
+         {/* Navigation Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 mb-16">
+          <Link 
+            to="/#essays" 
+            className="inline-flex items-center gap-2 px-6 py-3 bg-background border border-border text-foreground rounded-lg hover:bg-accent transition-colors duration-200"
+          >
+            <BookOpen className="w-4 h-4" />
+            Read Essays
+          </Link>
         </div>
       </div>
     </div>
