@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { fetchEssayBySlug } from '../lib/sanity';
 import type { Essay } from '../lib/sanity';
-import { ArrowLeft, Home, BookOpen } from 'lucide-react';
 
 export default function EssayPage() {
     const { slug } = useParams<{ slug: string }>();
@@ -85,39 +84,30 @@ export default function EssayPage() {
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-8">
-            {/* Navigation Buttons */}
-            <div className="flex flex-wrap gap-4 mb-8">
-                <Link 
-                    to="/" 
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-background border border-border text-foreground rounded-lg hover:bg-accent transition-colors duration-200"
-                >
-                    <Home className="w-4 h-4" />
-                    Home
-                </Link>
-                <Link 
-                    to="/#essays" 
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-background border border-border text-foreground rounded-lg hover:bg-accent transition-colors duration-200"
-                >
-                    <BookOpen className="w-4 h-4" />
-                    All Essays
-                </Link>
-            </div>
-            
             <h1 className="text-4xl font-bold mb-4">{essay.title}</h1>
             <div className="prose leading-loose  text-xl prose-lg max-w-none">
                 {essay.content ? renderBlockContent(essay.content) : <p>No content available.</p>}
             </div>
             
-            {/* Back to Essays Button */}
-            <div className="mt-10">
-                <Link 
-                    to="/#essays" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200"
-                >
-                    <ArrowLeft className="w-4 h-4" />
-                    Back to Essays
+            <Link to="/" className="mt-10 inline-flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 group">
+                    <span className="font-medium">Read More</span>
+                    <svg 
+                        className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24" 
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path 
+                            strokeLinecap="round" 
+                            strokeLinejoin="round" 
+                            strokeWidth={2} 
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" 
+                        />
+                    </svg>
                 </Link>
-            </div>
+
         </div>
+        
     );
 }
